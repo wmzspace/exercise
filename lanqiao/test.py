@@ -1,6 +1,9 @@
-def adder(x):
-    def wrapper(y):
-        return x + y
-    return wrapper
-adder5 = adder(5)
-print(adder5(adder5(6)))
+def myfunc(n):
+  return lambda a: a * n
+
+
+mydoubler = myfunc(2)
+mytripler = myfunc(3)
+
+print(mydoubler(11))
+print(mytripler(11))
